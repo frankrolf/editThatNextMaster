@@ -54,7 +54,7 @@ def applySelection(g, pointSelection, compSelection):
             if len(g.contours[ci].points) >= pi + 1:
                 g.contours[ci].points[pi].selected = True
     for ci in compSelection:
-        if g.components and len(g.components) >= ci:
+        if g.components and len(g.components) >= ci + 1:
             g.components[ci].selected = True
 
 def getCurrentFontAndWindowFlavor():
